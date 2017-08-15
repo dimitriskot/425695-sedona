@@ -1,12 +1,218 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<title>Курорт Седона</title>
+</head>
+<body>
+<!-- шапка -->
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<!-- размеры всех изображений взял из макета -->
 
-  </body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<ul class="site-navigation">
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="media.html">Фото и видео</a></li>
+				<li><a href="map.html">Карта штата</a></li>
+				<li><a href="hotels.html">Гостиницы</a></li>
+			</ul>
+			<img class="main-header-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип курорта Седона">
+		</nav>
+	</header>
+
+<!-- тело страницы -->
+	<main class="container">
+		<div class="welcoming">
+<!-- по крупному фото не совсем понял. в ТЗ написано, что оно должно быть в 100% ширины, но подразумевается, что она не должна менять пропорции. была мысль указать её фоном в div'e, но без стилей не могу проверить -->
+			<img class="welcoming-image-1" src="http://placehold.it/1200x800" width="1200" height="800" alt="view">
+			<img class="welcoming-image-2" src="http://placehold.it/188x45" width="188" height="45" alt="Welcome">
+			<img class="welcoming-image-3" src="http://placehold.it/176x30" width="176" height="30" alt="to the gorgeous">
+			<img class="welcoming-image-4" src="http://placehold.it/458x78" width="458" height="78" alt="Sedona">
+			<img class="welcoming-image-5" src="http://placehold.it/296x80" width="296" height="80" alt="Because the Grand Canyon sucks!">
+
+<!-- не уверен про декоративную маску внизу фона с горами - в разметке её не показываю, но думаю, может сделать svg-шную фигуру? -->
+
+		</div>
+		<b>Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</b>
+
+<!-- Особенности -->
+		<section class="features">
+			<h2 class="visually-hidden">
+				Особенности				
+			</h2>
+			<p class="features-title">
+				Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+			</p>
+			<ol class="features-list">
+				<li>
+					<div class="features-item">
+						<p class="features-item-title">
+							Настоящий городок	
+						</p>
+						<p class="features-item-number">
+							- №1 -
+						</p>
+						<p class="features-item-text">
+							Седона - не аттракцион для туристов, там течет своя жизнь
+						</p>
+<!-- Не понял по ТЗ, что должно происходить с изображением -->
+						<img class="features-item-image" src="http://placehold.it/800x401"  width="800" height="401" alt="Вид Седоны">
+					</div>
+					<ul class="features-description">
+						<li>
+							<div class="features-description-icon">
+<!-- иконка будет спрайтом с помощью стилей -->
+							</div>
+							<p class="features-description-title">
+								Жилье
+							</p>
+							<p class="features-description-text">
+								Рекомендуем пожить в настоящем мотеле, все как в кино!
+							</p>
+						</li>
+						<li>
+							<div class="features-description-icon">
+<!-- иконка будет спрайтом с помощью стилей -->
+							</div>
+							<p class="features-description-title">
+								Еда
+							</p>
+							<p class="features-description-text">
+								Всегда заказывайте фирменный бургер. Вы не разочаруетесь!
+							</p>
+						</li>
+						<li>
+							<div class="features-description-icon">
+<!-- иконка будет спрайтом с помощью стилей -->
+							</div>
+							<p class="features-description-title">
+								Сувениры
+							</p>
+							<p class="features-description-text">
+								Не только китайского, но и местного производства!
+							</p>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="features-item">
+						<p class="features-item-title">
+							Там есть мост дьявола
+						</p>
+						<p class="features-item-number">
+							- №2 -
+						</p>
+						<p class="features-item-text">
+							Да, по нему можно пройти! Если конечно Вы осмелитесь
+						</p>
+<!-- Не понял по ТЗ, что должно происходить с изображением -->
+						<img class="features-item-image" src="http://placehold.it/800x401"  width="800" height="401" alt="Вид Седоны">
+					</div>
+				</li>
+				<li>
+					<div class="features-item">
+						<p class="features-item-title">
+							Небольшая площадь
+						</p>
+						<p class="features-item-number">
+							- №3 -
+						</p>
+						<p class="features-item-text">
+							Все достопремичательности находятся очень близко
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="features-item">
+						<p class="features-item-title">
+							Красивая дорога
+						</p>
+						<p class="features-item-number">
+							- №4 -
+						</p>
+						<p class="features-item-text">
+							Ехать в Седону из Лас-Вегаса совсем не скучно!
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="features-item">
+						<p class="features-item-title">
+							Мало туристов
+						</p>
+						<p class="features-item-number">
+							- №5 -
+						</p>
+						<p class="features-item-text">
+							Большинство едет в Гранд Каньон и толпится там
+						</p>
+					</div>
+				</li>
+			</ol>
+		</section>
+
+<!-- форма поиска -->
+		<section class="search">
+			<h2 class="visually-hidden">
+				Поиск гостиницы в Седоне
+			</h2>
+			<p class="search-title">
+				Заинтересовались?
+			</p>
+			<p class="search-text">
+				Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне
+			</p>
+			<button class="search-button" type="button">
+				Поиск гостиницы в Седоне
+			</button>
+<!-- в задании написано, что формы можно не размечать пока что. я попробовал сделать форму, но тогда не выходит иконку календаря сделать отдельным элементом, как в ТЗ указано, поэтому поставил div -->
+			<div class="search-form">
+				<p class="search-form-date">
+					Дата заезда: <span class="search-form-text">24 апреля 2017</span>
+					<button class="button">
+						<img src="http://placehold.it/21x22" width="21" height="22" alt="Календарь">
+					</button>
+				</p>
+				<p class="search-form-date">
+					Дата выезда: <span class="search-form-text">4 июля 2017</span>
+					<button class="button">
+						<img src="http://placehold.it/21x22" width="21" height="22" alt="Календарь">
+					</button>
+				</p>
+<!-- форму выборки количества тоже не знаю ещё..-->
+				<p class="search-form-count">
+					Взрослые: <span class="search-form-text">- 2 +</span>
+					Дети: <span class="search-form-text">- 0 +</span>
+				</p>
+				<a class="search-button" href="#">Найти</a>
+			</div>
+
+		</section>
+
+<!-- карта -->
+		<div class="map">
+			<img src="http://placehold.it/1199x593"  width="1199" height="593" alt="Местоположение Седоны">
+		</div>
+	</main>
+
+<!-- подвал -->
+	<footer class="main-footer">
+		<p class="footer-follow">#visitsedona</p>
+		<div class="footer-social">
+			<ul>
+				<li><a class="social-button" href="#">Twitter</a></li>
+				<li><a class="social-button" href="#">Facebook</a></li>
+				<li><a class="social-button" href="#">YouTube</a></li>
+			</ul>
+		</div>
+		<p class="footer-copyright">
+        	Website by 
+        	<a href="https://htmlacademy.ru/intensive/htmlcss">
+        		<img src="http://placehold.it/115x41"  width="115" height="41" alt="htmlacademy">
+        	</a>
+      </p>
+	</footer>
+
+</body>
 </html>
