@@ -24,24 +24,23 @@
 <!-- тело страницы -->
 	<main class="container">
 		<div class="welcoming">
-<!-- по крупному фото не совсем понял. в ТЗ написано, что оно должно быть в 100% ширины, но подразумевается, что она не должна менять пропорции. была мысль указать её фоном в div'e, но без стилей не могу проверить -->
-			<img class="welcoming-image-1" src="http://placehold.it/1200x800" width="1200" height="800" alt="view">
-			<img class="welcoming-image-2" src="http://placehold.it/188x45" width="188" height="45" alt="Welcome">
-			<img class="welcoming-image-3" src="http://placehold.it/176x30" width="176" height="30" alt="to the gorgeous">
-			<img class="welcoming-image-4" src="http://placehold.it/458x78" width="458" height="78" alt="Sedona">
-			<img class="welcoming-image-5" src="http://placehold.it/296x80" width="296" height="80" alt="Because the Grand Canyon sucks!">
+<!-- значит буду делать фоном в div'е (убрал из разметки картинку) -->
+			<img class="welcoming-image-1" src="http://placehold.it/188x45" width="188" height="45" alt="Welcome">
+			<img class="welcoming-image-2" src="http://placehold.it/176x30" width="176" height="30" alt="to the gorgeous">
+			<img class="welcoming-image-3" src="http://placehold.it/458x78" width="458" height="78" alt="Sedona">
+			<img class="welcoming-image-4" src="http://placehold.it/296x80" width="296" height="80" alt="Because the Grand Canyon sucks!">
 
 <!-- не уверен про декоративную маску внизу фона с горами - в разметке её не показываю, но думаю, может сделать svg-шную фигуру? -->
 
 		</div>
-		<b>Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</b>
 
 <!-- Особенности -->
 		<section class="features">
-			<h2 class="visually-hidden">
-				Особенности				
+<!-- согласен с этим заголовком -->
+			<h2 class="features-title">
+				Седона - небольшой городок в Аризоне, <br>заслуживающий большего!				
 			</h2>
-			<p class="features-title">
+			<p class="features-text">
 				Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
 			</p>
 			<ol class="features-list">
@@ -55,7 +54,6 @@
 					<p class="features-item-text">
 						Седона - не аттракцион для туристов, там течет своя жизнь
 					</p>
-<!-- Не понял по ТЗ, что должно происходить с изображением -->
 					<img class="features-item-image" src="http://placehold.it/800x401"  width="800" height="401" alt="Вид Седоны">
 					<ul class="features-description">
 						<li>
@@ -160,7 +158,7 @@
 
 <!-- карта -->
 		<div class="map">
-			<img src="http://placehold.it/1199x593"  width="1199" height="593" alt="Местоположение Седоны">
+			<img src="http://placehold.it/1199x593" width="1199" height="593" alt="Местоположение Седоны">
 		</div>
 	</main>
 
@@ -188,35 +186,39 @@
 					Форма поиска гостиницы в Седоне
 				</h2>
 				<form class="search-form" action="#" method="get">
-					<p class="search-form-date">
+<!-- я заключаю текст, форму для даты и календарь в блоки, потому что подозреваю, что чтобы иконка календаря в виде отдельного элемента выглядела так же, как в макете (как будто в одной строке с формой для заполнения на сером фоне) нужно будет стилизовать их одним блоком -->
+					<div class="search-form-date">
 						<label>
 							Дата заезда:
 							<input type="text" name="arrival" value="24 апреля 2017">
 						</label>
-<!-- в ТЗ указано, что иконка календаря должна быть отдельным элементом. но как сделать, чтобы календарь был в одном блоке с инпутом - не придумал. разве что, как в данном случае, они находятся в теге <p> и потом его стилизовать -->
 						<button class="calendar" type="button"><img src="http://placehold.it/21x22" width="21" height="22" alt="Календарь"></button>
-					</p>
-					<p class="search-form-date">
+					</div>
+					<div class="search-form-date">
 						<label>
 							Дата выезда:
 							<input type="text" name="departure" value="4 июля 2017">
 						</label>
 						<button class="calendar" type="button"><img src="http://placehold.it/21x22" width="21" height="22" alt="Календарь"></button>
-					</p>
+					</div>
 <!-- форму выборки количества человек смог разметить только так. как добавить "-/+" по бокам - не знаю.. -->
-					<p class="search-form-count">
-						<label>
+					<div class="search-form-count">
+						<label for="count-adult">
 							Взрослые:
-							<input type="number" min="0" max="10" step="1" value="2">
 						</label>
-					</p>
-					<p class="search-form-count">
-						<label>
+							<button class="count-button-minus">-</button>
+							<input id="count-adult" type="text" value="2">
+							<button class="count-button-plus">+</button>
+					</div>
+					<div class="search-form-count">
+						<label for="count-kids">
 							Дети:
-							<input type="number" min="0" max="10" step="1" value="0">
 						</label>
-					</p>
-					<a class="search-button" href="#">Найти</a>
+							<button class="count-button-minus">-</button>
+							<input id="count-kids" type="text" value="0">
+							<button class="count-button-plus">+</button>
+					</div>
+					<button class="search-button" type="button">Найти</button>
 				</form>
 			</section>
 </body>
