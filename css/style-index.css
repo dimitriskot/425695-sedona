@@ -1,0 +1,111 @@
+body {
+	font-size: 14px;
+	line-height: 26px;
+	font-family: "PTSans", sans-serif;
+	color: #000000;
+	background-color: #f0f0f0;
+	text-transform: uppercase;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #000000;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+.main-header,
+.container,
+.main-footer,
+.modal-search {
+	background-color: #ffffff;
+}
+/* сделал фон, чтобы было видно картинку */
+.welcoming {
+	background-color: #f0f0f0;
+}
+
+.features-title {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.features-text {
+	color: #333333;
+}
+
+.features-item {
+	background-color: #eeeeee;
+}
+
+.features-item-title,
+.features-description-title {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+
+.features-item-number,
+.features-item-text {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.features-list li:nth-child(1),
+.features-list li:nth-child(2) {
+	background-color: #81b3d2;
+	color: #ffffff;
+}
+
+.features-list .features-description li {
+	background-color: #ffffff;
+	color: #333333;
+}
+
+.features-description-title {
+	color: #000000;
+}
+
+.for-search-title {
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.for-search-text {
+	font-size: 14px;
+	line-height: 24px;
+	color: #333333;
+}
+
+.footer-follow {
+	font-weight: bold;
+}
+
+.modal-search {
+	font-weight: bold;
+}
+
+input[type="text"] {
+	font:inherit;
+}
+
+.calendar {
+	background: url(../img/calendar.png) no-repeat 50% 50%;
+	width: 21px;
+	height: 22px;
+}
+
+.count-button-minus {
+	background: url(../img/minus.png) no-repeat 50% 50%;
+	width: 38px;
+	height: 38px;
+}
+
+.count-button-plus {
+	background: url(../img/plus.png) no-repeat 50% 50%;
+	width: 38px;
+	height: 38px;
+}

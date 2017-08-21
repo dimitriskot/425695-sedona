@@ -1,0 +1,113 @@
+body {
+	font-size: 14px;
+	line-height: 26px;
+	font-family: "PTSans", sans-serif;
+	color: #000000;
+	background-color: #f0f0f0;
+	text-transform: uppercase;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.site-navigation a,
+.site-navigation-current {
+	color: #000000;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+.site-navigation-current {
+	color: #766357;
+}
+
+.main-header,
+.container,
+.main-footer,
+.modal-search {
+	background-color: #ffffff;
+}
+
+/* сделал фон, чтобы было видно форму */
+.choices {
+	background-color: #618bb3;
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	font-weight: bold;
+}
+
+input[type="text"] {
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.finded {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.sorting {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sorting-list-current {
+	color: #81b3d2;
+}
+
+.choice-button {
+	background-color: transparent;
+	text-transform: uppercase;
+}
+
+.housing-article {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.housing-title {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.housing-article-text {
+	color: #333333;
+}
+
+.housing-raiting {
+	color: #666666;
+	background-color: #f2f2f2;
+}
+
+.button {
+	color: #ffffff;
+}
+
+.housing-buttons a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.button-detail {
+	background-color: #81b3d2;
+}
+
+.button-reserve {
+	background-color: #766357;	
+}
+
+.footer-follow {
+	font-weight: bold;
+}
