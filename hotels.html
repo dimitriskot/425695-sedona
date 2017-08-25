@@ -14,12 +14,12 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<ul class="site-navigation">
-				<li><a href="info.html">Информация</a></li>
-				<li><a href="media.html">Фото и видео</a></li>
-				<li><a href="map.html">Карта штата</a></li>
+				<li><a href="info.html" title="Информация">Информация</a></li>
+				<li><a href="media.html" title="Фото и видео">Фото и видео</a></li>
+				<li><a href="map.html" title="Карта штата">Карта штата</a></li>
 				<li class="site-navigation-current">Гостиницы</li>
 			</ul>
-			<a href="index.html">
+			<a href="index.html" title="Главная">
 			<img class="main-header-logo" src="img/logo.png" width="138" height="70" alt="Логотип курорта Седона">
 			</a>
 		</nav>
@@ -40,21 +40,18 @@
 					</legend>
 					<ul>
 						<li class="choice-form-item">
-							<label>
-								<input id="pool" class="choice-form-checkbox" type="checkbox" name="infrastructure" checked>
-								Бассейн
+							<input id="pool" class="choice-form-checkbox" type="checkbox" name="infrastructure" checked>
+							<label for="pool">Бассейн
 							</label>
 						</li>
 						<li class="choice-form-item">
-							<label>
-								<input id="parking" class="choice-form-checkbox" type="checkbox" name="infrastructure">
-								Парковка
+							<input id="parking" class="choice-form-checkbox" type="checkbox" name="infrastructure">
+							<label for="parking">Парковка
 							</label>
 						</li>
 						<li class="choice-form-item">
-							<label>
-								<input id="wifi" class="choice-form-checkbox" type="checkbox" name="infrastructure">
-								Wi-Fi
+							<input id="wifi" class="choice-form-checkbox" type="checkbox" name="infrastructure">
+							<label for="wifi">Wi-Fi
 							</label>
 						</li>
 					</ul>
@@ -65,21 +62,18 @@
 					</legend>
 					<ul>
 						<li class="choice-form-item">
-							<label>
-								<input id="hotel" class="choice-form-checkbox" type="checkbox" name="housing-choice" checked>
-								Гостиница
+							<input id="hotel" class="choice-form-checkbox" type="checkbox" name="housing-choice" checked>
+							<label for="hotel">Гостиница
 							</label>
 						</li>
 						<li class="choice-form-item">
-							<label>
-								<input id="motel" class="choice-form-checkbox" type="checkbox" name="housing-choice" checked>
-								Мотель
+							<input id="motel" class="choice-form-checkbox" type="checkbox" name="housing-choice" checked>
+							<label for="motel">Мотель
 							</label>
 						</li>
 						<li class="choice-form-item">
-							<label>
-								<input id="apartments" class="choice-form-checkbox" type="checkbox" name="housing-choice" checked>
-								Апартаменты
+							<input id="apartments" class="choice-form-checkbox" type="checkbox" name="housing-choice" checked>
+							<label for="apartments">Апартаменты
 							</label>
 						</li>
 					</ul>
@@ -89,8 +83,10 @@
 						Стоимость в сутки (р):
 					</legend>
 			        	<p class="price-text">
-			        		<input type="text" name="price-from" placeholder="От 0">
-                    		<input type="text" name="price-before" placeholder="До 3000">
+			        	<label class="visually-hidden" for="price-from">Стоимость в сутки, от</label>
+			        		<input type="text" name="price-from" placeholder="От 0" id="price-from">
+			        	<label class="visually-hidden" for="price-before">Стоимость в сутки, до</label>
+                    		<input type="text" name="price-before" placeholder="До 3000" id="price-before">
                     	</p>
                     	<p class="price-range">
                     		<input type="range" name="price-range" step="1">

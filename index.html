@@ -11,10 +11,10 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<ul class="site-navigation">
-				<li><a href="info.html">Информация</a></li>
-				<li><a href="media.html">Фото и видео</a></li>
-				<li><a href="map.html">Карта штата</a></li>
-				<li><a href="hotels.html">Гостиницы</a></li>
+				<li><a href="info.html" title="Информация">Информация</a></li>
+				<li><a href="media.html" title="Фото и видео">Фото и видео</a></li>
+				<li><a href="map.html" title="Карта штата">Карта штата</a></li>
+				<li><a href="hotels.html" title="Гостиницы">Гостиницы</a></li>
 			</ul>
 			<img class="main-header-logo" src="img/logo.png" width="138" height="70" alt="Логотип курорта Седона">
 		</nav>
@@ -179,17 +179,15 @@
 				<form class="search-form" action="#" method="get">
 <!-- я заключаю текст, форму для даты и календарь в блоки, потому что подозреваю, что чтобы иконка календаря в виде отдельного элемента выглядела так же, как в макете (как будто в одной строке с формой для заполнения на сером фоне) нужно будет стилизовать их одним блоком -->
 					<div class="search-form-date">
-						<label>
-							Дата заезда:
-							<input type="text" name="arrival" value="24 апреля 2017">
-						</label>
+						<label for="arrival-date">
+							Дата заезда:</label>
+							<input type="text" name="arrival" value="24 апреля 2017" id="arrival-date">
 						<button class="calendar" type="button"></button>
 					</div>
 					<div class="search-form-date">
-						<label>
-							Дата выезда:
-							<input type="text" name="departure" value="4 июля 2017">
-						</label>
+						<label for="departure-date">
+							Дата выезда:</label>
+							<input type="text" name="departure" value="4 июля 2017" id="departure-date">
 						<button class="calendar" type="button"></button>
 					</div>
 <!-- форму выборки количества человек смог разметить только так. как добавить "-/+" по бокам - не знаю.. -->
