@@ -1,13 +1,9 @@
 body {
 	font-size: 14px;
 	line-height: 26px;
-	font-family: "PTSans", sans-serif;
+	font-family: "PT Sans", sans-serif;
 	background-color: #f0f0f0;
 	text-transform: uppercase;
-}
-
-ul, ol {
-	list-style: none;
 }
 
 .site-navigation a {
@@ -16,24 +12,78 @@ ul, ol {
 	text-decoration:none;
 }
 
+.site-navigation a:hover {
+	color: #81b3d2;
+}
+
+.site-navigation a:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.site-navigation-current {
+	color: #766357;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+.site-navigation {
+	background-color: #ffffff;
+}
+
+.site-navigation,
+.features-list,
+.features-description,
+.choice-form-list,
+.sorting-list,
+.arrows,
+.footer-social-list {
+	list-style: none;
+}
+
 .main-header,
 .container,
 .main-footer,
 .modal-search {
 	background-color: #ffffff;
 }
-/* сделал фон, чтобы было видно картинку */
-.welcoming {
-	background-color: #f0f0f0;
+
+.main-header {
+	background: url(../img/background-photo.jpg) no-repeat;
 }
 
-.features-title {
+/* маска
+.mask {
+	max-width: 1200px;
+	height: 57px;
+}
+*/
+
+
+.welcoming-sign-text {
+	background-color: #ffffff;
+}
+
+.welcoming-title {
+	text-align: center;
+	font-size: 21px;
+}
+
+.welcoming-text {
+	text-align: center;
+	color: #333333;
+	font-weight: bold;
+}
+
+.footer-follow {
 	font-size: 21px;
 	font-weight: bold;
 }
 
-.features-text {
-	color: #333333;
+/* index.html */
+
+.features-item {
+	text-align: center;
 }
 
 .features-item {
@@ -46,6 +96,23 @@ ul, ol {
 	line-height: 21px;
 }
 
+.features-description-1 {
+	background: url(../img/icon-1.svg) no-repeat 50% 50%;
+	width: 75px;
+	height: 72px;
+}
+
+.features-description-2 {
+	background: url(../img/icon-2.svg) no-repeat 50% 50%;
+	width: 74px;
+	height: 70px;
+}
+
+.features-description-3 {
+	background: url(../img/icon-3.svg) no-repeat 50% 50%;
+	width: 64px;
+	height: 76px;
+}
 
 .features-item-number,
 .features-item-text {
@@ -53,8 +120,7 @@ ul, ol {
 	line-height: 21px;
 }
 
-.features-list li:nth-child(1),
-.features-list li:nth-child(2) {
+.features-item-blue {
 	background-color: #81b3d2;
 	color: #ffffff;
 }
@@ -68,6 +134,10 @@ ul, ol {
 	color: #000000;
 }
 
+.for-search {
+	text-align: center;
+}
+
 .for-search-title {
 	font-size: 30px;
 	line-height: 36px;
@@ -79,50 +149,90 @@ ul, ol {
 	color: #333333;
 }
 
-.footer-follow {
+.for-search-button {
+	font-family: "PT Sans", sans-serif;
+	font-size: 21px;
+	line-height: 26px;
 	font-weight: bold;
+	color: #ffffff;
+	background-color: #766357;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+}
+
+.for-search-button:hover {
+	background-color: #604e43;
+}
+
+.for-search-button:active .for-active {
+	opacity: 0.3;
+}
+
+.for-search-button:active {
+	background-color: #503e33;
 }
 
 .modal-search {
 	font-weight: bold;
 }
 
-input[type="text"] {
+.search-form input {
 	font:inherit;
 }
 
 .calendar {
-	background: url(../img/calendar.png) no-repeat 50% 50%;
+	background: url(../img/calendar.svg) no-repeat 50% 50%;
 	width: 21px;
 	height: 22px;
 }
 
 .count-button-minus {
-	background: url(../img/minus.png) no-repeat 50% 50%;
+	background: url(../img/minus.svg) no-repeat 50% 50%;
 	width: 38px;
 	height: 38px;
 }
 
 .count-button-plus {
-	background: url(../img/plus.png) no-repeat 50% 50%;
+	background: url(../img/plus.svg) no-repeat 50% 50%;
 	width: 38px;
 	height: 38px;
 }
 
-/*hotels.html*/
-
-.site-navigation-current {
-	color: #766357;
+.search-button {
+	font-family: "PT Sans", sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
 	font-weight: bold;
-	text-decoration:none;
+	background-color: #81b3d2;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
 }
 
-/* сделал фон, чтобы было видно форму */
+.search-button:hover {
+	background-color: #669ec0;
+}
+
+.search-button:active .for-active {
+	opacity: 0.3;
+}
+
+.search-button:active {
+	background-color: #5496bd;
+}
+
+/*hotels.html*/
+
+.container {
+	line-height: 21px;
+}
+
 .choices {
 	background-color: #618bb3;
-	font-size: 16px;
-	line-height: 21px;
 	color: #ffffff;
+	background: url(../img/filter-background.jpg) no-repeat; 
 }
 
 .choice-form {
@@ -130,13 +240,33 @@ input[type="text"] {
 }
 
 .choice-form-title {
+	font-size: 16px;
 	font-weight: bold;
 }
 
-.price-text input[type="text"] {
-	font-size: 16px;
-	line-height: 21px;
+/* по стилизации значков чекбоксов нам вроде должны рассказать позже */
+.choice-form-checkbox,
+.choice-form-checkbox:hover {
+	color: white;
+}
+
+.choice-form-checkbox:disabled {
+	color: #6a6a6a;
+}
+
+.price-text input[placeholder] {
+	text-transform: inherit;
+}
+
+.choice-button {
+	border: 2px solid #ffffff;
+	background-color: transparent;
+	text-transform: uppercase;
+}
+
+.choice-button:hover {
 	color: #000000;
+	background-color: #ffffff;
 }
 
 .finded {
@@ -150,24 +280,60 @@ input[type="text"] {
 	line-height: 18px;
 }
 
+.sorting-list a {
+	color: #000000;
+	opacity: 0.3;
+/* подчёркивается круглой точкой, по макету должна быть квадратная точка, как исправить - пока не знаю */
+	text-decoration-style: dotted;
+	text-decoration-color: #81b3d2; 
+}
+
+.sorting-list a:hover {
+	color: #81b3d2;
+	opacity: 1;
+}
+
+.sorting-list a:active {
+	color: #000000;
+	opacity: 1;
+	text-decoration: none; 
+}
+
 .sorting-list-current {
 	color: #81b3d2;
 }
 
-.choice-button {
-	background-color: transparent;
-	text-transform: uppercase;
+.arrows a path {
+	fill: #cacaca;
 }
 
-.housing-article {
-	font-size: 14px;
-	line-height: 21px;
+.arrows a:hover path {
+	fill: #000000;
 }
 
-.housing-title {
+.arrows a:active path {
+	fill: #81b3d2;
+}
+
+.arrows-current path {
+	fill: #81b3d2;
+}
+
+.housing-title a {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.housing-title a:hover {
+	color: #81b3d2;
+}
+
+.housing-title a:active {
+	color: #000000;
+	opacity: 0.3;
 }
 
 .housing-article-text {
@@ -183,15 +349,35 @@ input[type="text"] {
 	color: #ffffff;
 }
 
-.housing-buttons a {
-	text-decoration: none;
-	font-weight: bold;
-}
-
 .button-detail {
 	background-color: #81b3d2;
 }
 
+a.button:active .for-active {
+	opacity: 0.3;
+}
+
+a.button-detail:hover {
+	background-color: #669ec0;	
+}
+
+a.button-detail:active {
+	background-color: #5496bd;	
+}
+
 .button-reserve {
 	background-color: #766357;	
+}
+
+a.button-reserve:hover {
+	background-color: #604e43;	
+}
+
+a.button-reserve:active {
+	background-color: #503e33;	
+}
+
+.housing-buttons a {
+	text-decoration: none;
+	font-weight: bold;
 }
