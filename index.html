@@ -6,16 +6,17 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/outline.css">
 </head>
 <body>
 <!-- шапка -->
-
+<div class="shadow">
 	<header class="main-header">
 		<nav class="main-navigation">
 			<ul class="site-navigation">
-				<li><a href="info.html" title="Информация">Информация</a></li>
-				<li><a href="media.html" title="Фото и видео">Фото и видео</a></li>
-				<li><a href="map.html" title="Карта штата">Карта штата</a></li>
+				<li><a href="#" title="Информация">Информация</a></li>
+				<li><a href="#" title="Фото и видео">Фото и видео</a></li>
+				<li><a href="#" title="Карта штата">Карта штата</a></li>
 				<li><a href="hotels.html" title="Гостиницы">Гостиницы</a></li>
 			</ul>
 			<img class="main-header-logo" src="img/logo.png" width="138" height="70" alt="Логотип курорта Седона">
@@ -23,11 +24,10 @@
 		<div class="welcoming-sign-image">
 			<img class="welcoming-image" src="img/welcome-title.png" width="458" height="352" alt="Welcome">
 		</div>
-<!-- маска
+<!-- маска-->
 		<div class="mask">
-			<img class="welcoming-mask" src="img/mask.png" width="100%" height="57" alt="Welcome">
+			<img src="img/mask.png" width="100%" height="57">
 		</div>
--->
 		<div class="welcoming-sign-text">
 			<h2 class="welcoming-title">
 				Седона - небольшой городок в Аризоне, <br>заслуживающий большего!				
@@ -45,6 +45,7 @@
 		<section class="features">
 			<ol class="features-list">
 				<li class="features-item features-item-blue">
+				<div class="features-box">
 					<h3 class="features-item-title">
 						Настоящий<br>городок	
 					</h3>
@@ -52,12 +53,13 @@
 						&#8211; №1 &#8211;
 					</p>
 					<p class="features-item-text">
-						Седона - не аттракцион для туристов,<br>там течет своя жизнь
+						Седона - не аттракцион для туристов, там <br>течет своя жизнь
 					</p>
+				</div>
 					<img class="features-item-image" src="img/image-1.jpg"  width="800" height="256" alt="Вид Седоны">
 					<ul class="features-description">
 						<li>
-							<div class="features-description-1">
+							<div class="features-icon features-icon-1">
 							</div>
 							<h3 class="features-description-title">
 								Жилье
@@ -67,8 +69,7 @@
 							</p>
 						</li>
 						<li>
-							<div class="features-description-2">
-<!-- иконка будет спрайтом с помощью стилей -->
+							<div class="features-icon features-icon-2">
 							</div>
 							<h3 class="features-description-title">
 								Еда
@@ -78,8 +79,7 @@
 							</p>
 						</li>
 						<li>
-							<div class="features-description-3">
-<!-- иконка будет спрайтом с помощью стилей -->
+							<div class="features-icon features-icon-3">
 							</div>
 							<h3 class="features-description-title">
 								Сувениры
@@ -91,6 +91,7 @@
 					</ul>
 				</li>
 				<li class="features-item features-item-blue">
+				<div class="features-box">
 					<h3 class="features-item-title">
 						Там есть<br>мост дьявола
 					</h3>
@@ -100,10 +101,11 @@
 					<p class="features-item-text">
 						Да, по нему можно пройти! Если конечно<br>Вы осмелитесь
 					</p>
-<!-- Не понял по ТЗ, что должно происходить с изображением -->
+				</div>
 					<img class="features-item-image" src="img/image-2.jpg"  width="800" height="256" alt="Вид Седоны">
 				</li>
 				<li class="features-item">
+				<div class="features-box">
 					<h3 class="features-item-title">
 						Небольшая<br>площадь
 					</h3>
@@ -113,8 +115,10 @@
 					<p class="features-item-text">
 						Все достопремичательности<br>находятся очень близко
 					</p>
+				</div>
 				</li>
 				<li class="features-item">
+				<div class="features-box">
 					<h3 class="features-item-title">
 						Красивая<br>дорога
 					</h3>
@@ -124,8 +128,10 @@
 					<p class="features-item-text">
 						Ехать в Седону из Лас-Вегаса совсем<br>не скучно!
 					</p>
+				</div>
 				</li>
 				<li class="features-item">
+				<div class="features-box">
 					<h3 class="features-item-title">
 						Мало<br>туристов
 					</h3>
@@ -135,6 +141,7 @@
 					<p class="features-item-text">
 						Большинство едет в Гранд Каньон и<br>толпится там
 					</p>
+				</div>
 				</li>
 			</ol>
 		</section>
@@ -176,9 +183,9 @@
         	<a href="https://htmlacademy.ru/intensive/htmlcss">
         		<img src="img/logo_name.png"  width="115" height="41" alt="htmlacademy">
         	</a>
-      </p>
+      	</p>
 	</footer>
-
+</div>
 <!-- вариант формы -->
 			<section class="modal-search">
 				<h2 class="visually-hidden">
@@ -186,35 +193,61 @@
 				</h2>
 				<form class="search-form" action="#" method="get">
 <!-- я заключаю текст, форму для даты и календарь в блоки, потому что подозреваю, что чтобы иконка календаря в виде отдельного элемента выглядела так же, как в макете (как будто в одной строке с формой для заполнения на сером фоне) нужно будет стилизовать их одним блоком -->
+
 					<div class="search-form-date">
 						<label for="arrival-date">
-							Дата заезда:</label>
+							Дата заезда:
+						</label>
+						<div class="date-box">
 							<input type="text" name="arrival" value="24 апреля 2017" id="arrival-date">
-						<button class="calendar" type="button"></button>
+							<button class="calendar" type="button">
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
+  										<path d="M19.25 2.02H16.4V.65c0-.38-.3-.7-.65-.7-.36 0-.66.32-.66.7v1.38h-3.94V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38H5.9V.65c0-.38-.3-.7-.65-.7-.36 0-.66.32-.66.7v1.38H1.74C.78 2.03 0 2.85 0 3.86v16.3C0 21.18.78 22 1.75 22h17.5c.97 0 1.75-.82 1.75-1.84V3.86c0-1-.78-1.83-1.75-1.83zm.44 18.14a.45.45 0 0 1-.45.46H1.75a.45.45 0 0 1-.44-.46V3.86a.45.45 0 0 1 .45-.46H4.6v1.38c0 .38.3.7.65.7.36 0 .66-.32.66-.7V3.4h3.94v1.38c0 .38.3.7.66.7.36 0 .66-.32.66-.7V3.4h3.93v1.38c0 .38.3.7.65.7.36 0 .66-.32.66-.7V3.4h2.85c.24 0 .44.2.44.46v16.3z"/>
+  									<path d="M4.6 8.22H7.2v2.07H4.6zm0 3.45H7.2v2.06H4.6zm0 3.44H7.2v2.08H4.6zm4.6 0h2.6v2.08H9.2zm0-3.43h2.6v2.06H9.2zm0-3.45h2.6v2.07H9.2zm4.58 6.9h2.63v2.06H13.8zm0-3.45h2.63v2.06H13.8zm0-3.45h2.63v2.07H13.8z"/>
+								</svg>
+							</button>
+						</div>
 					</div>
 					<div class="search-form-date">
 						<label for="departure-date">
-							Дата выезда:</label>
+							Дата выезда:
+						</label>
+						<div class="date-box">
 							<input type="text" name="departure" value="4 июля 2017" id="departure-date">
-						<button class="calendar" type="button"></button>
+							<button class="calendar" type="button">
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
+  										<path d="M19.25 2.02H16.4V.65c0-.38-.3-.7-.65-.7-.36 0-.66.32-.66.7v1.38h-3.94V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38H5.9V.65c0-.38-.3-.7-.65-.7-.36 0-.66.32-.66.7v1.38H1.74C.78 2.03 0 2.85 0 3.86v16.3C0 21.18.78 22 1.75 22h17.5c.97 0 1.75-.82 1.75-1.84V3.86c0-1-.78-1.83-1.75-1.83zm.44 18.14a.45.45 0 0 1-.45.46H1.75a.45.45 0 0 1-.44-.46V3.86a.45.45 0 0 1 .45-.46H4.6v1.38c0 .38.3.7.65.7.36 0 .66-.32.66-.7V3.4h3.94v1.38c0 .38.3.7.66.7.36 0 .66-.32.66-.7V3.4h3.93v1.38c0 .38.3.7.65.7.36 0 .66-.32.66-.7V3.4h2.85c.24 0 .44.2.44.46v16.3z"/>
+  									<path d="M4.6 8.22H7.2v2.07H4.6zm0 3.45H7.2v2.06H4.6zm0 3.44H7.2v2.08H4.6zm4.6 0h2.6v2.08H9.2zm0-3.43h2.6v2.06H9.2zm0-3.45h2.6v2.07H9.2zm4.58 6.9h2.63v2.06H13.8zm0-3.45h2.63v2.06H13.8zm0-3.45h2.63v2.07H13.8z"/>
+								</svg>
+							</button>
+						</div>
 					</div>
-<!-- форму выборки количества человек смог разметить только так. как добавить "-/+" по бокам - не знаю.. -->
-					<div class="search-form-count">
-						<label for="count-adult">
-							Взрослые:
-						</label>
-							<button class="count-button-minus" type="button"></button>
-							<input id="count-adult" type="text" value="2">
-							<button class="count-button-plus" type="button"></button>
-					</div>
-					<div class="search-form-count">
-						<label for="count-kids">
-							Дети:
-						</label>
-							<button class="count-button-minus" type="button"></button>
-							<input id="count-kids" type="text" value="0">
-							<button class="count-button-plus" type="button"></button>
-					</div>
+ 					<div class="search-form-count">
+ 						<label for="count-adult">
+ 							Взрослые:
+ 						</label>
+ 						<div class="count-box">
+ 							<button class="count-button-minus" type="button">
+ 								<span class="symbol">−</span>
+ 							</button>
+ 							<input id="count-adult" type="text" value="2">
+ 							<button class="count-button-plus" type="button">
+ 								<span class="symbol">+</span>
+ 							</button>
+ 						</div>
+ 						<label for="count-kids">
+ 							Дети:
+ 						</label>
+ 						<div class="count-box">
+ 							<button class="count-button-minus" type="button">
+ 								<span class="symbol">−</span>
+ 							</button>
+  							<input id="count-kids" type="text" value="0">
+  							<button class="count-button-plus" type="button">
+  								<span class="symbol">+</span>	
+  							</button>
+  						</div>
+  					</div>
 					<button class="search-button" type="button"><span class="for-active">Найти</span></button>
 				</form>
 			</section>

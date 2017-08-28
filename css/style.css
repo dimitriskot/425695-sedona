@@ -2,8 +2,14 @@ body {
 	font-size: 14px;
 	line-height: 26px;
 	font-family: "PT Sans", sans-serif;
-	background-color: #f0f0f0;
+	background-color: #f2f2f2;
 	text-transform: uppercase;
+}
+
+.shadow {
+	width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .site-navigation a {
@@ -52,14 +58,6 @@ body {
 	background: url(../img/background-photo.jpg) no-repeat;
 }
 
-/* маска
-.mask {
-	max-width: 1200px;
-	height: 57px;
-}
-*/
-
-
 .welcoming-sign-text {
 	background-color: #ffffff;
 }
@@ -86,7 +84,7 @@ body {
 	text-align: center;
 }
 
-.features-item {
+.features-list {
 	background-color: #eeeeee;
 }
 
@@ -96,19 +94,19 @@ body {
 	line-height: 21px;
 }
 
-.features-description-1 {
+.features-icon-1 {
 	background: url(../img/icon-1.svg) no-repeat 50% 50%;
 	width: 75px;
 	height: 72px;
 }
 
-.features-description-2 {
+.features-icon-2 {
 	background: url(../img/icon-2.svg) no-repeat 50% 50%;
 	width: 74px;
 	height: 70px;
 }
 
-.features-description-3 {
+.features-icon-3 {
 	background: url(../img/icon-3.svg) no-repeat 50% 50%;
 	width: 64px;
 	height: 76px;
@@ -125,7 +123,7 @@ body {
 	color: #ffffff;
 }
 
-.features-list .features-description li {
+.features-description {
 	background-color: #ffffff;
 	color: #333333;
 }
@@ -173,60 +171,12 @@ body {
 	background-color: #503e33;
 }
 
-.modal-search {
-	font-weight: bold;
-}
 
-.search-form input {
-	font:inherit;
-}
-
-.calendar {
-	background: url(../img/calendar.svg) no-repeat 50% 50%;
-	width: 21px;
-	height: 22px;
-}
-
-.count-button-minus {
-	background: url(../img/minus.svg) no-repeat 50% 50%;
-	width: 38px;
-	height: 38px;
-}
-
-.count-button-plus {
-	background: url(../img/plus.svg) no-repeat 50% 50%;
-	width: 38px;
-	height: 38px;
-}
-
-.search-button {
-	font-family: "PT Sans", sans-serif;
-	font-size: 21px;
-	line-height: 26px;
-	color: #ffffff;
-	font-weight: bold;
-	background-color: #81b3d2;
-	text-transform: uppercase;
-	border: none;
-	cursor: pointer;
-}
-
-.search-button:hover {
-	background-color: #669ec0;
-}
-
-.search-button:active .for-active {
-	opacity: 0.3;
-}
-
-.search-button:active {
-	background-color: #5496bd;
-}
 
 /*hotels.html*/
 
 .container {
-	line-height: 21px;
+	/*line-height: 21px;*/
 }
 
 .choices {
@@ -380,4 +330,422 @@ a.button-reserve:active {
 .housing-buttons a {
 	text-decoration: none;
 	font-weight: bold;
+}
+
+
+
+
+
+
+
+/* форма поиска гостиницы */
+
+.modal-search {
+	font-weight: bold;
+}
+
+.search-form input {
+	font:inherit;
+}
+
+.search-button {
+	font-family: "PT Sans", sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #81b3d2;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+}
+
+.search-button:hover {
+	background-color: #669ec0;
+}
+
+.search-button:active .for-active {
+	opacity: 0.3;
+}
+
+.search-button:active {
+	background-color: #5496bd;
+}
+
+.search-form-date,
+.search-form-count {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 458px;
+	height: 38px;
+}
+
+.search-form-date {
+	margin-bottom: 30px;
+}
+
+.date-box {
+	display: flex;
+	align-items: center;
+	width: 346px;
+	height: 38px;
+	background-color: #f2f2f2;
+}
+
+.date-box:hover,
+.date-box:hover .calendar,
+.date-box:hover input {
+	background-color: #ebebeb;
+}
+/* с формой я мудрил самостоятельно - недомудрил. не знаю, как с фокусом быть. */
+.search-form-date input:focus,
+.search-form-count input:focus {
+	background-color: #ffffff;
+}
+
+.calendar {
+	outline: none;
+	width: 38px;
+	height: 38px;
+	border: none;
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+
+.calendar svg {
+	fill: #cacaca;
+}
+
+.calendar:hover svg {
+	fill: #000000;
+}
+
+.calendar:active svg {
+	fill: #81b3d2;
+}
+
+.search-form-date input {
+	outline: none;
+	margin-left: 13px;
+	border: none;
+	background-color: #f2f2f2;
+	width: 295px;
+}
+
+.search-form-count input {
+	border: none;
+	background-color: #f2f2f2;
+	width: 38px;
+	text-align: center;
+	outline: none;
+}
+
+.count-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 114px;
+	height: 38px;
+	background-color: #f2f2f2;
+}
+
+.count-button-minus,
+.count-button-plus {
+	width: 38px;
+	height: 38px;
+	border: none;
+	background-color: #f2f2f2;
+	cursor: pointer;
+	color: #cacaca;
+	outline: none;
+}
+
+.symbol {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.count-button-minus:hover,
+.count-button-plus:hover {
+	color: #000000;
+}
+
+.count-button-minus:active,
+.count-button-plus:active {
+	color: #81b3d2;
+}
+
+
+
+
+
+/* сетка */
+
+.main-header,
+.hotels-header,
+.container,
+.main-footer {
+	/*width: 1200px;*/
+	margin: 0 auto;
+}
+
+.main-navigation,
+.site-navigation,
+.features-list,
+.features-description
+.features,
+.features-box,
+.features-description-title,
+.choice-form-list {
+	padding: 0;
+	margin: 0;
+}
+
+.main-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	height: 780px;
+	padding: 0;
+}
+
+.hotels-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	height: 56px;
+	padding: 0;
+}
+
+.main-header-logo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+
+.site-navigation {
+	display: flex;
+	height: 56px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.site-navigation li {
+	width: 20%;
+	text-align: center;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: auto;
+}
+
+.welcoming-sign-image {
+	margin-top: 76px;
+	margin-bottom: auto;
+	text-align: center;
+}
+
+/* сетка index.html */
+
+/* маска*/
+.mask {
+	position: absolute;
+	bottom: 216px;
+	max-width: 1200px;
+	height: 57px;
+}
+
+.welcoming-sign-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 216px;
+	margin: 0;
+}
+
+.welcoming-title {
+	margin-bottom: 37px;
+}
+
+.welcoming-text {
+	margin: 0;
+}
+
+.features-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.features-item,
+.features-box {
+	width: 33.33%;
+	height: 256px;
+}
+
+.features-item {
+	display: flex;
+	justify-content: space-around;
+}
+
+.features-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.features-item-text {
+	width: 350px;
+}
+
+.features-item-blue {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.features-item-blue:first-child {
+	margin-bottom: 330px;
+}
+
+.features-item-blue:nth-child(2) {
+	flex-direction: row-reverse;
+}
+
+.features-description {
+	display: flex;
+	width: 100%;
+	padding: 0;
+	justify-content: space-around;
+}
+
+.features-description li {
+	width: 33.33%;
+	height: 330px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.features-icon {
+	margin-top: 60px;
+	margin-bottom: 32px;
+}
+
+
+
+.main-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-follow,
+.footer-social,
+.footer-copyright {
+	margin: auto;
+}
+
+
+/* сетка hotels.html */
+
+.choices,
+.choice-form {
+	height: 217px;
+}
+
+.choice-form {
+	margin: 0;
+	padding: 0;
+	padding-left: 72px;
+	width: 179px;
+}
+
+.choice {
+	display: flex;
+	align-items: center;
+}
+
+.choice-form:last-child {
+	width: 450px;
+	margin-left: auto;
+}
+
+.sort {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding-left: 72px;
+	padding-right: 72px;
+}
+
+.sorting,
+.sorting-list,
+.arrows {
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.finded {
+	margin-right: 49px;
+}
+
+.sorting-list {
+	margin-left: 40px;
+}
+
+.sorting-list li {
+	margin-right: 34px;
+}
+
+.arrows {
+	margin-left: auto;
+}
+
+.arrows li:last-child {
+	margin-left: 12px;	
+}
+
+.housing-article {
+	height: 150px;
+	display: flex;
+	padding-left: 72px;
+	padding-right: 72px;
+	align-items: center;
+}
+
+.info-box,
+.raiting-box {
+	height: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.raiting-box {
+	margin-left: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.info-box {
+	margin-left: 30px;
+}
+
+.housing-title,
+.housing-buttons,
+.housing-article-text,
+.housing-raiting {
+	margin: 0;
+	padding: 0;
 }

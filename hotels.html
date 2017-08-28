@@ -6,18 +6,19 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/outline.css">
 </head>
 <body>
 <!-- шапка -->
 
 <!-- размеры всех изображений взял из макета -->
-
+<div class="shadow">
 	<header class="hotels-header">
 		<nav class="main-navigation">
 			<ul class="site-navigation">
-				<li><a href="info.html" title="Информация">Информация</a></li>
-				<li><a href="media.html" title="Фото и видео">Фото и видео</a></li>
-				<li><a href="map.html" title="Карта штата">Карта штата</a></li>
+				<li><a href="#" title="Информация">Информация</a></li>
+				<li><a href="#" title="Фото и видео">Фото и видео</a></li>
+				<li><a href="#" title="Карта штата">Карта штата</a></li>
 				<li class="site-navigation-current">Гостиницы</li>
 			</ul>
 			<a href="index.html" title="Главная">
@@ -31,9 +32,11 @@
 
 <!-- форма выбора гостиницы -->
 		<section class="choices">
+			<!-- нам пока про спрятанные элементы не рассказывали, поэтому просто пока их закомментировал. мешают делать сетку
 			<h2 class="visually-hidden">
 				Форма выбора гостиницы
 			</h2>
+			-->
 			<form class="choice" action="#" method="get">
 				<fieldset class="choice-form">
 					<legend class="choice-form-title">
@@ -84,26 +87,26 @@
 						Стоимость в сутки (р):
 					</legend>
 			        	<p class="price-text">
-			        	<label class="visually-hidden" for="price-from">Стоимость в сутки, от</label>
+			        	<!--<label class="visually-hidden" for="price-from">Стоимость в сутки, от</label>-->
 			        		<input type="text" name="price-from" placeholder="От 0" id="price-from">
-			        	<label class="visually-hidden" for="price-before">Стоимость в сутки, до</label>
+			        	<!--<label class="visually-hidden" for="price-before">Стоимость в сутки, до</label>-->
                     		<input type="text" name="price-before" placeholder="До 3000" id="price-before">
                     	</p>
                     	<p class="price-range">
                     		<input type="range" name="price-range" step="1">
                     	</p>
+                    <button class="button choice-button" type="button">
+					Показать
+					</button>
 				</fieldset>
-			<button class="button choice-button" type="button">
-				Показать
-			</button>
 			</form>
 		</section>
 
 <!-- сортировка гостиниц -->
 		<section class="sort">
-			<h2 class="visually-hidden">
+			<!--<h2 class="visually-hidden">
 				Сортировка гостиниц
-			</h2>
+			</h2>-->
 			<p class="finded">
 				Найдено: 3
 			</p>
@@ -135,91 +138,103 @@
 
 <!-- перечень гостиниц -->
 		<section class="housing">
-			<h2 class="visually-hidden">
+			<!--<h2 class="visually-hidden">
 				Перечень гостиниц
-			</h2>
+			</h2>-->
 			<article class="housing-article">
-				<h3 class="housing-title">
-					<a href="#">Amara resort &amp; spa</a>
-				</h3>
 				<img src="img/hotel-1.jpg" width="135" height="90" alt="Amara resort & spa">
-				<p class="housing-article-text">
-					<span>Гостиница </span><span>от 4000 р.</span>
-				</p>
-				<div class="housing-buttons">
-					<a class="button button-detail" href="#"><span class="for-active">Подробнее</span></a>
-					<a class="button button-reserve" href="#"><span class="for-active">Забронировать</span></a>
+				<div class="info-box">
+					<h3 class="housing-title">
+						<a href="#">Amara resort &amp; spa</a>
+					</h3>
+					<p class="housing-article-text">
+						<span>Гостиница </span><span>от 4000 р.</span>
+					</p>
+					<div class="housing-buttons">
+						<a class="button button-detail" href="#"><span class="for-active">Подробнее</span></a>
+						<a class="button button-reserve" href="#"><span class="for-active">Забронировать</span></a>
+					</div>
 				</div>
-				<div class="housing-stars">
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
-  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
-  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
-  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
-  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
-					</svg>
+				<div class="raiting-box">
+					<div class="housing-stars">
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+	  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+	  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+	  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+	  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
+						</svg>
+					</div>
+					<p class="housing-raiting">
+						Рейтинг: 8,5
+					</p>
 				</div>
-				<p class="housing-raiting">
-					Рейтинг: 8,5
-				</p>
 			</article>
 
 			<article class="housing-article">
-				<h3 class="housing-title">
-					<a href="#">Desert quail inn</a>
-				</h3>
 				<img src="img/hotel-2.jpg" width="135" height="90" alt="Desert quail inn">
-				<p class="housing-article-text">
-					<span>Мотель </span><span>от 3000 р.</span>
-				</p>
-				<div class="housing-buttons">
-					<a class="button button-detail" href="#"><span class="for-active">Подробнее</span></a>
-					<a class="button button-reserve" href="#"><span class="for-active">Забронировать</span></a>
+				<div class="info-box">
+					<h3 class="housing-title">
+						<a href="#">Desert quail inn</a>
+					</h3>
+					<p class="housing-article-text">
+						<span>Мотель </span><span>от 3000 р.</span>
+					</p>
+					<div class="housing-buttons">
+						<a class="button button-detail" href="#"><span class="for-active">Подробнее</span></a>
+						<a class="button button-reserve" href="#"><span class="for-active">Забронировать</span></a>
+					</div>
 				</div>
-				<div class="housing-stars">
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
-  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
-  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
-  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
-					</svg>
+				<div class="raiting-box">
+					<div class="housing-stars">
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+	  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+	  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+	  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
+						</svg>
+					</div>
+					<p class="housing-raiting">
+						Рейтинг: 8,9
+					</p>
 				</div>
-				<p class="housing-raiting">
-					Рейтинг: 8,9
-				</p>
 			</article>
 
 			<article class="housing-article">
-				<h3 class="housing-title">
-					<a href="#">Villas at poco diablo</a>
-				</h3>
 				<img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at poco diablo">
-				<p class="housing-article-text">
-					<span>Аппартаменты </span><span>от 2000 р.</span>
-				</p>
-				<div class="housing-buttons">
-					<a class="button button-detail" href="#"><span class="for-active">Подробнее</span></a>
-					<a class="button button-reserve" href="#"><span class="for-active">Забронировать</span></a>
+				<div class="info-box">
+					<h3 class="housing-title">
+						<a href="#">Villas at poco diablo</a>
+					</h3>
+					<p class="housing-article-text">
+						<span>Аппартаменты </span><span>от 2000 р.</span>
+					</p>
+					<div class="housing-buttons">
+						<a class="button button-detail" href="#"><span class="for-active">Подробнее</span></a>
+						<a class="button button-reserve" href="#"><span class="for-active">Забронировать</span></a>
+					</div>
 				</div>
-				<div class="housing-stars">
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
-  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
-  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
-					</svg>
+				<div class="raiting-box">
+					<div class="housing-stars">
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+	  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+	  						<path fill="#81B3D2" d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 13l-5.56 4 2.12-6.5L0 6.5h6.88"/>
+						</svg>
+					</div>
+					<p class="housing-raiting">
+						Рейтинг: 9,2
+					</p>
 				</div>
-				<p class="housing-raiting">
-					Рейтинг: 9,2
-				</p>
 			</article>
 
 		</section>
@@ -245,6 +260,6 @@
         	</a>
       </p>
 	</footer>
-
+</div>
 </body>
 </html>

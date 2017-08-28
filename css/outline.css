@@ -1,0 +1,161 @@
+/*.main-header {
+	outline: 5px solid #F75258;
+}
+
+.main-navigation {
+	outline: 1px solid #D3F752;
+}
+
+.site-navigation {
+	outline: 1px solid #54F718;
+}
+
+.site-navigation li {
+	outline: 1px solid #F70529;
+}
+
+.welcoming-sign-image {
+	outline: 1px solid #2A0FF7;
+}
+
+.mask {
+	outline: 1px solid #73F700;
+}
+
+.welcoming-title {
+	outline: 1px solid #73F700;
+}
+
+.welcoming-text {
+	outline: 1px solid #F70529;
+}
+
+
+.welcoming-sign-text {
+	outline: 1px solid #F75258;
+}
+
+
+.features-description li {
+	outline: 1px solid #F70529;
+}
+
+.features-item {
+	outline: 1px solid #F75258;
+}
+
+.features-list {
+	outline: 5px solid #F75258;
+}
+
+body {
+	outline: 5px solid #D3F752;
+}
+
+.main-header,
+.container,
+.main-footer {
+	outline: 5px solid #000000;
+}
+
+
+.main-navigation {
+	outline: 1px solid #D3F752;
+}
+
+.welcoming-sign-image {
+	outline: 1px solid #2A0FF7;
+}
+
+.welcoming-sign-text {
+	outline: 1px solid #F75258;
+}
+
+.mask {
+	outline: 1px solid #73F700;
+}
+
+.for-search {
+	outline: 5px solid #F75258;
+}
+
+.site-navigation li {
+	outline: 1px solid #F70529;
+}
+
+.features-list {
+	outline: 5px solid #F75258;
+}
+
+
+
+.features-item {
+	outline: 1px solid #F75258;
+}
+
+.features-description li {
+	outline: 1px solid #F70529;
+}
+
+.features-item-text,
+.features-item-number,
+.features-item-title {
+	outline: 1px solid #F70529;
+}
+
+.footer-follow,
+.footer-social,
+.footer-copyright {
+	outline: 1px solid #F70529;
+}
+
+
+
+.hotels-header,
+.container,
+.main-footer {
+	outline: 1px solid #000000;
+}
+
+.visually-hidden {
+	outline: 1px solid #F75258;
+}
+
+.choice-form {
+	outline: 1px solid #ffffff;	
+}
+
+.choice-box {
+	outline: 2px solid red;	
+}
+
+
+.finded,
+.sorting,
+.sorting-list,
+.arrows {
+	outline: 1px solid #F70529;
+}
+
+
+
+
+.housing-article,
+.raiting-box,
+.housing-article img,
+.info-box,
+.housing-title,
+.housing-buttons,
+.housing-article-text {
+		outline: 1px solid #F70529;	
+}
+
+
+
+.hotels-header,
+.container,
+.main-footer {
+	outline: 1px solid #000000;
+}
+
+*/
