@@ -80,7 +80,7 @@ body {
 
 /* index.html */
 
-.features-item {
+.features-list li {
 	text-align: center;
 }
 
@@ -587,33 +587,22 @@ a.button-reserve:active {
 .features-box {
 	width: 33.33%;
 	height: 256px;
-}
-
-.features-item {
-	display: flex;
-	justify-content: space-around;
-}
-
-.features-box {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.features-item-text {
-	width: 350px;
-}
-
 .features-item-blue {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
-.features-item-blue:first-child {
-	margin-bottom: 330px;
+.features-item-text,
+.features-description-text {
+	width: 280px;
 }
 
 .features-item-blue:nth-child(2) {
@@ -662,20 +651,25 @@ a.button-reserve:active {
 	height: 217px;
 }
 
-.choice-form {
-	margin: 0;
-	padding: 0;
-	padding-left: 72px;
-	width: 179px;
-}
-
 .choice {
+	margin: 0 72px;
 	display: flex;
 	align-items: center;
 }
 
+.choice-form {
+	margin: 0;
+	padding: 0;
+	/*margin-left: 72px;
+	width: 179px;*/
+}
+
+.choice-form:first-child {
+	margin-right: 115px;
+}
+
 .choice-form:last-child {
-	width: 450px;
+	/*width: 450px;*/
 	margin-left: auto;
 }
 
@@ -703,8 +697,8 @@ a.button-reserve:active {
 	margin-left: 40px;
 }
 
-.sorting-list li {
-	margin-right: 34px;
+.sorting-list li:not(:last-child) {
+   margin-right: 34px;
 }
 
 .arrows {

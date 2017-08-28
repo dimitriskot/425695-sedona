@@ -89,19 +89,11 @@ body {
 
 
 
-.features-item {
-	outline: 1px solid #F75258;
-}
-
 .features-description li {
 	outline: 1px solid #F70529;
 }
 
-.features-item-text,
-.features-item-number,
-.features-item-title {
-	outline: 1px solid #F70529;
-}
+
 
 .footer-follow,
 .footer-social,
@@ -121,22 +113,9 @@ body {
 	outline: 1px solid #F75258;
 }
 
-.choice-form {
-	outline: 1px solid #ffffff;	
-}
-
 .choice-box {
 	outline: 2px solid red;	
 }
-
-
-.finded,
-.sorting,
-.sorting-list,
-.arrows {
-	outline: 1px solid #F70529;
-}
-
 
 
 
@@ -151,11 +130,35 @@ body {
 }
 
 
-
 .hotels-header,
 .container,
 .main-footer {
 	outline: 1px solid #000000;
+}
+
+.features-item {
+	outline: 1px solid #F75258;
+}
+
+.features-item-text,
+.features-item-number,
+.features-item-title,
+.features-description-text {
+	outline: 1px solid #F70529;
+}
+
+
+
+.choice-form {
+	outline: 1px solid #ffffff;	
+}
+
+
+.finded,
+.sorting,
+.sorting-list,
+.arrows {
+	outline: 1px solid #F70529;
 }
 
 */
