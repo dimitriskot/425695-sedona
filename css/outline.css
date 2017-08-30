@@ -22,20 +22,6 @@
 	outline: 1px solid #73F700;
 }
 
-.welcoming-title {
-	outline: 1px solid #73F700;
-}
-
-.welcoming-text {
-	outline: 1px solid #F70529;
-}
-
-
-.welcoming-sign-text {
-	outline: 1px solid #F75258;
-}
-
-
 .features-description li {
 	outline: 1px solid #F70529;
 }
@@ -44,9 +30,7 @@
 	outline: 1px solid #F75258;
 }
 
-.features-list {
-	outline: 5px solid #F75258;
-}
+
 
 body {
 	outline: 5px solid #D3F752;
@@ -83,15 +67,7 @@ body {
 	outline: 1px solid #F70529;
 }
 
-.features-list {
-	outline: 5px solid #F75258;
-}
 
-
-
-.features-description li {
-	outline: 1px solid #F70529;
-}
 
 
 
@@ -119,15 +95,7 @@ body {
 
 
 
-.housing-article,
-.raiting-box,
-.housing-article img,
-.info-box,
-.housing-title,
-.housing-buttons,
-.housing-article-text {
-		outline: 1px solid #F70529;	
-}
+
 
 
 .hotels-header,
@@ -140,11 +108,13 @@ body {
 	outline: 1px solid #F75258;
 }
 
-.features-item-text,
-.features-item-number,
-.features-item-title,
-.features-description-text {
-	outline: 1px solid #F70529;
+.features-list {
+	outline: 5px solid #F75258;
+}
+
+.features-description li,
+.features-list li {
+	outline: 1px solid black;
 }
 
 
@@ -161,4 +131,191 @@ body {
 	outline: 1px solid #F70529;
 }
 
+.search-form-date,
+.search-form-count {
+	outline: 3px solid orange;
+}
+
+.date-box {
+	outline: 3px solid brown;
+}
+
+.search-form-date input {
+	outline: 1px solid blue;
+}
+
+.search-form-date label {
+	outline: 1px solid green;	
+}
+
+.modal-search {
+	outline: 3px solid black;
+}
+
+.search-form {
+	outline: 3px solid black;
+}
+
+.search-form-date label,
+.search-form-count label {
+	outline: 1px solid green;	
+}
+
+.date-box,
+.count-box {
+	outline: 2px dashed brown;
+}
+
+.search-form-date,
+.search-form-count {
+	outline: 3px solid orange;
+}
+
+.calendar,
+.count-button-minus,
+.count-button-plus {
+	outline: 1px solid red;
+}
+
+.date-box input,
+.count-box input {
+	outline: 1px solid blue;
+}
+
+
+.for-search-title {
+	outline: 1px solid blue;
+}
+
+.for-search-text {
+	outline: 1px solid red;
+}
+
+
+.for-search,
+.features {
+		outline: 3px solid orange;
+}
+
+.count-box input {
+	outline: 1px solid red;
+}
+
+
+
+.mask {
+	outline: 1px solid red;	
+}
+
+.welcoming-sign-text {
+	outline: 3px solid orange;
+}
+
+.sign-text-box {
+	outline: 1px solid blue;
+}
+
+
+.map {
+		outline: 1px solid blue;
+}
+
+.map img {
+	outline: 1px solid red;	
+}
+.main-footer {
+	outline: 2px dashed brown;
+}
+
+.footer-container {
+	outline: 3px solid orange;	
+}
+
+.footer-follow,
+.footer-social,
+.footer-copyright {
+	outline: 1px solid red;	
+}
+
+.footer-copyright a,
+.footer-copyright span {
+	outline: 1px solid blue;
+}
+
+.footer-copyright svg {
+	outline: 1px solid orange;
+}
+
+
+.choice-form {
+outline: 1px solid #ffffff;	
+}
+
+.choice {
+outline: 3px solid #ffffff;		
+}
+
+.sort {
+	outline: 3px solid orange;
+}
+
+.finded,
+.sorting,
+.sorting-list,
+.arrows {
+outline: 1px solid orange;	
+}
+
+.sort-box {
+	outline: 1px solid blue;
+}
+
+
+.housing-article {
+	outline: 1px solid blue;
+}
+
+.housing {
+	outline: 3px solid orange;
+}
+
+.features-box,
+.features-item {
+	outline: 1px solid red;
+}
+
+.features-item-text,
+.features-item-number,
+.features-item-title {
+	outline: 1px solid black;
+}
+
+.welcoming-title {
+	outline: 2px solid black;
+}
+
+.welcoming-text {
+	outline: 1px solid red;
+}
+
+
+.welcoming-sign-text {
+	outline: 1px solid blue;
+}
+
+.price-controls label {
+	outline: 1px solid white;
+}
+
+
+.housing-article,
+.raiting-box,
+.housing-article img,
+.info-box,
+.housing-title,
+.housing-buttons,
+.housing-article-text,
+.housing-article-text span {
+		outline: 1px solid #F70529;	
+}
 */
