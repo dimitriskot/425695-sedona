@@ -67,17 +67,11 @@ body {
 	outline: 1px solid #F70529;
 }
 
-
-
-
-
 .footer-follow,
 .footer-social,
 .footer-copyright {
 	outline: 1px solid #F70529;
 }
-
-
 
 .hotels-header,
 .container,
@@ -92,11 +86,6 @@ body {
 .choice-box {
 	outline: 2px solid red;	
 }
-
-
-
-
-
 
 .hotels-header,
 .container,
@@ -117,12 +106,9 @@ body {
 	outline: 1px solid black;
 }
 
-
-
 .choice-form {
 	outline: 1px solid #ffffff;	
 }
-
 
 .finded,
 .sorting,
@@ -200,8 +186,6 @@ body {
 .count-box input {
 	outline: 1px solid red;
 }
-
-
 
 .mask {
 	outline: 1px solid red;	
@@ -307,6 +291,16 @@ outline: 1px solid orange;
 	outline: 1px solid white;
 }
 
+.choice,
+.choice-form,
+.choice-form-title,
+.choice-form-item,
+.choice-label,
+.checkbox-indicator,
+.price-controls label,
+.price-controls input {
+	outline: 1px solid white;	
+}
 
 .housing-article,
 .raiting-box,
@@ -315,7 +309,9 @@ outline: 1px solid orange;
 .housing-title,
 .housing-buttons,
 .housing-article-text,
-.housing-article-text span {
+.housing-article-text span,
+.housing-stars,
+.housing-raiting {
 		outline: 1px solid #F70529;	
 }
 */
