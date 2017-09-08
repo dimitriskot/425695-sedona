@@ -1,18 +1,9 @@
-/*.main-header {
-	outline: 5px solid #F75258;
-}
+/*
 
 .main-navigation {
 	outline: 1px solid #D3F752;
 }
 
-.site-navigation {
-	outline: 1px solid #54F718;
-}
-
-.site-navigation li {
-	outline: 1px solid #F70529;
-}
 
 .welcoming-sign-image {
 	outline: 1px solid #2A0FF7;
@@ -91,19 +82,6 @@ body {
 .container,
 .main-footer {
 	outline: 1px solid #000000;
-}
-
-.features-item {
-	outline: 1px solid #F75258;
-}
-
-.features-list {
-	outline: 5px solid #F75258;
-}
-
-.features-description li,
-.features-list li {
-	outline: 1px solid black;
 }
 
 .choice-form {
@@ -263,17 +241,6 @@ outline: 1px solid orange;
 	outline: 3px solid orange;
 }
 
-.features-box,
-.features-item {
-	outline: 1px solid red;
-}
-
-.features-item-text,
-.features-item-number,
-.features-item-title {
-	outline: 1px solid black;
-}
-
 .welcoming-title {
 	outline: 2px solid black;
 }
@@ -291,16 +258,37 @@ outline: 1px solid orange;
 	outline: 1px solid white;
 }
 
-.choice,
-.choice-form,
-.choice-form-title,
-.choice-form-item,
-.choice-label,
-.checkbox-indicator,
-.price-controls label,
-.price-controls input {
-	outline: 1px solid white;	
+
+
+
+
+.features-item {
+	outline: 1px solid #F75258;
 }
+
+.features-list {
+	outline: 5px solid #F75258;
+}
+
+.features-description li,
+.features-list li {
+	outline: 1px solid black;
+}
+
+.features-box,
+.features-item,
+.features-icon,
+.features-description-title,
+.features-description-text {
+	outline: 1px solid red;
+}
+
+.features-item-text,
+.features-item-number,
+.features-item-title {
+	outline: 1px solid black;
+}
+
 
 .housing-article,
 .raiting-box,
@@ -314,4 +302,32 @@ outline: 1px solid orange;
 .housing-raiting {
 		outline: 1px solid #F70529;	
 }
-*/
+
+
+
+
+
+.choice,
+.choice-form,
+.choice-form-title,
+.choice-form-item,
+.choice-label,
+.checkbox-indicator,
+.price-controls label,
+.price-controls input {
+	outline: 1px solid white;	
+}
+
+
+.site-navigation {
+	outline: 1px solid #54F718;
+}
+
+
+.main-header {
+	outline: 5px solid #F75258;
+}
+
+.site-navigation li {
+	outline: 1px solid #F70529;
+}*/
