@@ -1,7 +1,7 @@
 body {
 	font-size: 14px;
 	line-height: 26px;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 
 	text-transform: uppercase;
 
@@ -401,7 +401,7 @@ input[type="radio"].visually-hidden {
 .features-item,
 .features-box {
 	width: 33.33%;
-	height: 256px;
+	min-height: 256px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -445,6 +445,11 @@ input[type="radio"].visually-hidden {
 .features-item-text,
 .features-description-text {
 	font-size: 14px;
+}
+
+.features-item-text,
+.features-description-text {
+	margin-bottom: 10px;
 }
 
 .features-item-title {
@@ -604,7 +609,7 @@ input[type="radio"].visually-hidden {
 	height: 86px;
 	margin-top: auto;
 
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -913,7 +918,7 @@ input[type="radio"].visually-hidden {
 	height: 58px;
 	margin-top: auto;
 
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 21px;
 	line-height: 26px;
 	color: #ffffff;
